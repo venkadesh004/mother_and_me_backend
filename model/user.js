@@ -19,13 +19,13 @@ const user = new mongoose.Schema({
         type: String,
         required: true,
     },
-    presentPrimetes: {
+    initialPrimetes: {
         type: Number,
         required: true,
     },
     hospitalID: {
         type: String,
-        required: true
+        default: "None"
     },
     password: {
         type: String,
